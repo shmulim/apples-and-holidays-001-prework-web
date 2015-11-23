@@ -3,9 +3,9 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  holiday_hash[:winter].each do |key, val|
+  holiday_hash[:winter].each do |key, value|
     if key == :christmas || key == :new_years
-      val << supply
+      value << supply
     end
   end
 end
